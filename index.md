@@ -1,5 +1,3 @@
-Here you can say lots of fun things about your site.
-
-Maybe say a some things about yourself.
-
-Or maybe what you plan to blog about.
+This is the start of my blogs while I am working on cybersecurity topics and projects.
+Yes, I made this blogging website via a template, but it works.
+I may start on a homelab pretty soon.
