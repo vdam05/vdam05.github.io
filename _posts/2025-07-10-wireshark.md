@@ -5,11 +5,11 @@ Wireshark is used for monitoring web traffic in real time and analyzing it. To i
 
 For Linux, you can type in 'sudo apt install wireshark' to grab the Wireshark package. Then type the command 'wireshark' to open the GUI for wireshark. 
 
-To actually start capturing, go to Capture. You can start/stop/restart your capture here. Once done, you can save your traffic as a pcap file at File > Save As.
-
-# Important info on Wireshark 
 - You can choose a network interface to start capturing web traffic and save it into a pcap file later on. Or you can open a pcap file to see the traffic on it in the File > Open section.
 ![wireshark_net_int](/images/wireshark_network_interface.png)
+- To actually start capturing, go to Capture. You can start/stop/restart your capture here. Once done, you can save your traffic as a pcap file at File > Save As.
+
+# Wireshark Windows
 - Packet List: shows all the packets captured and their general information. There is also IPv4 and IPv6 addresses.
   - You can order packets by the time that they arrive (packet number does not mean that they arrive in that exact order), packet number, group packets up by destination IP, source IP, the protocol used, or the common information. You can order both ways. Click on the respective column name. 
 - Packet Details: where we see more details about the number of bytes captured, what network interface was used, the MAC address of source and destination, what protocol was used, source and destination port numbers and so on. It also shows the actual data in hex form. 
@@ -21,4 +21,9 @@ To actually start capturing, go to Capture. You can start/stop/restart your capt
   - Here you can search in the Packet List, Packet Details or Packet Bytes window for specific strings, hexadecimal values, or for multiple strings that matches a regex.
 - To filter for specific protocols, port numbers, IP addresses, and so on, type in the command in the bar with the bookmark in front. In addition, in Analyze > Display Filters, you could store commonly used filters and their function to refer later. It looks to be just like a programming statement, with use of boolean conditions and object properties. More on display filters here: [wireshark_display_link](https://www.wireshark.org/docs/wsug_html_chunked ChWorkBuildDisplayFilterSection.html)
 ![wireshark_display_filter](/images/wireshark-display.png)
+- It is similar for capture filters. Go to Capture > Options to manage filters. Choose an interface and at the bottom, you can type in a filter or multiple with the keyword 'and' or && where it says "Capture filter for selected interfaces:".
 
+*For either filters, best to create some basic rules so syntax is easily followed and then combine rules using boolean operations like 'and', 'or', 'not'.* 
+
+# Streams
+Since packets are out of order, in the Analyze > Follow section, you can reconstruct the conversation from ordering the packets, such as a TCP conversation.
