@@ -7,5 +7,8 @@ Burp Suite is used a lot in pentesting as a proxy. Therefore, you can craft spec
   - There is also the HTTP history tabs that show all the packets that you sent while the browser is opened.
 - Intruder: It works iteratively, allowing you to change certain bytes in a brute force manner. Then we get the different responses back based on what we changed by choosing a type of attack and putting a variable for the loop. For example, we could loop through different cookie values in the header. 
   - Click on Positions > Add/Clear/Auto $ for the variable changes on where the pointer is. The command "Auto $" tries to put a variable where it could affect the payload, such as in the cookie.
-  - Sniper attack: highlight a certain string that we are looping through. Then we can choose a payload type (like numbers, characters, etc) that will be put in. For example, we can iteratively create payloads with a certain variable number from 0 to 20 and get back those responses in full details.
+  - We can choose a payload type (like numbers, characters, etc) that will be put in where the variables art at.
+  - Sniper attack: go through all payload strings possible. Repeat for each position.
+  - Battering ram attack: go through all payload strings possible and put them in all positions simultaneously.
+  *You can also put your strings in a file that will be read from for payloads in the Payload Type.*
 - Repeater: This is for freely changing individual packets and seeing what the response is. Unlike intruder which gives you multiple responses after the loop, repeater gives you the response immediately for each request.
