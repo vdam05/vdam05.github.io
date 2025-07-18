@@ -21,9 +21,13 @@ For Linux, you can type in 'sudo apt install wireshark' to grab the Wireshark pa
   - Here you can search in the Packet List, Packet Details or Packet Bytes window for specific strings, hexadecimal values, or for multiple strings that matches a regex.
 - To filter for specific protocols, port numbers, IP addresses, and so on, type in the command in the bar with the bookmark in front. In addition, in Analyze > Display Filters, you could store commonly used filters and their function to refer later. It looks to be just like a programming statement, with use of boolean conditions and object properties. More on display filters here: [wireshark_display_link](https://www.wireshark.org/docs/wsug_html_chunked ChWorkBuildDisplayFilterSection.html)
 ![wireshark_display_filter](/images/wireshark-display.png)
-- It is similar for capture filters. Go to Capture > Options to manage filters. Choose an interface and at the bottom, you can type in a filter or multiple with the keyword 'and' or && where it says "Capture filter for selected interfaces:".
+- It is similar for capture filters. Go to Capture > Options to manage filters. Choose an interface and at the bottom, you can type in a filter or multiple where it says "Capture filter for selected interfaces:".
 
-*For either filters, best to create some basic rules so syntax is easily followed and then combine rules using boolean operations like 'and', 'or', 'not'.* 
+*For either filters, best to create some basic rules so syntax is easily followed and then combine rules using boolean operations like 'and', 'or', 'not'. &&, ||, ! also works similar to a programming language.* 
 
 # Streams
-Since packets are out of order, in the Analyze > Follow section, you can reconstruct the conversation from ordering the packets, such as a TCP conversation.
+Since packets are out of order, in the Analyze > Follow section, you can reconstruct the conversation from ordering the packets, such as a TCP conversation or HTTP packets.
+
+# Objects
+In the File > Export Objects section, you can filter out objects, like images, that are in certain packets, such as HTTP packets. 
+![wireshark_export_objects](/images/wireshark-export-obj.png)
