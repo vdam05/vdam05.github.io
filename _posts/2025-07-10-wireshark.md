@@ -14,6 +14,7 @@ For Linux, you can type in 'sudo apt install wireshark' to grab the Wireshark pa
   - You can order packets by the time that they arrive (packet number does not mean that they arrive in that exact order), packet number, group packets up by destination IP, source IP, the protocol used, or the common information. You can order both ways. Click on the respective column name. 
 - Packet Details: where we see more details about the number of bytes captured, what network interface was used, the MAC address of source and destination, what protocol was used, source and destination port numbers and so on. It also shows the actual data in hex form. 
 - Packet Bytes: this includes information in the packet details but in bytes. There is also a string representation of it as well.
+
 ![wireshark_windows](/images/wireshark-2.png)
 
 # Filtering 
