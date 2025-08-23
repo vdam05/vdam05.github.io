@@ -24,7 +24,7 @@ They are both ways of communication between the user and the server. However, HT
   - Battering ram attack: go through all payload strings possible and put them in all positions simultaneously.
   *You can also put your strings in a file that will be read from for payloads in the Payload Type.*
 - Repeater: This is for freely changing individual packets and seeing what the response is. Unlike intruder which gives you multiple responses after the loop, repeater gives you the response immediately for each request. It is quite convenient.
-- Decoder: This is where you can decrypt your strings. It does include hashing as well.
+- Decoder: This is where you can decrypt your strings, like URL-encoding (which is very similar to just hex). It does include hashing as well.
 # Setting up a browser with Burp automatically as proxy
 Rather than opening a new browser in the Proxy section every time, you can set a default browser that you use with
 Burp as proxy. It is different depending on browsers.
