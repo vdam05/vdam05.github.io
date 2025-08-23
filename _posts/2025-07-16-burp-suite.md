@@ -15,7 +15,8 @@ They are both ways of communication between the user and the server. However, HT
   - There is also the HTTP history tabs that show all the packets that you sent while the browser is opened. It will show you both successful and failed packets 
     - To see the packet where you edited it, click on a packet and change from Original Packet to Edited Packet
   - The Inspector table also shows you all the content variables for that packet and you can edit directly in it and it would reflect in the packet immediately.
-  - By right-clicking on a packet, you can also send that packet to Intruder, Repeater or Decoder as well.
+  - By right-clicking on a packet, you can also send that packet to Intruder, Repeater and so on.
+  - By also right-clicking on highlighted data, you can send it to Decoder.
 - Intruder: It works iteratively, allowing you to change certain bytes in a brute force manner. Then we get the different responses back based on what we changed by choosing a type of attack and putting a variable for the loop. For example, we could loop through different cookie values in the header. 
   - Click on Positions > Add/Clear/Auto $ for the variable changes on where the pointer is. The command "Auto $" tries to put a variable where it could affect the payload, such as in the cookie.
   - We can choose a payload type (like numbers, characters, etc) that will be put in where the variables art at.
@@ -23,9 +24,9 @@ They are both ways of communication between the user and the server. However, HT
   - Battering ram attack: go through all payload strings possible and put them in all positions simultaneously.
   *You can also put your strings in a file that will be read from for payloads in the Payload Type.*
 - Repeater: This is for freely changing individual packets and seeing what the response is. Unlike intruder which gives you multiple responses after the loop, repeater gives you the response immediately for each request. It is quite convenient.
-- Decoder: This is 
+- Decoder: This is where you can decrypt your strings. It does include hashing as well.
 # Setting up a browser with Burp automatically as proxy
 Rather than opening a new browser in the Proxy section every time, you can set a default browser that you use with
 Burp as proxy. It is different depending on browsers.
 
-In Firefox, it would be in the Settings > Network Settings > Manual proxy configuration (choose IP as 127.0.0.1 which is localhost and port 8080 as default Burp port) 
+In Firefox, it would be in the Settings > Network Settings > Manual proxy configuration (choose IP as 127.0.0.1 which is localhost and port 8080 as default Burp port). You would also need to add Burp Suite's certificate to Firefox so that it could be **trusted**.
