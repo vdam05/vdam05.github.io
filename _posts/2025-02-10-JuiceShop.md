@@ -10,6 +10,20 @@ Main vulnerability: DOM XSS
 
 In the Search tab, your search is appended within the DOM. So we can manipulate the DOM this way by adding the piece of JS code and then reload the website.
 
+# Bonus Payload
+It is like DOM XSS but with a different payload, inserting an audio player into it.
+
+# Zero Star
+For this one, we can go to the "Customer Feedback" tab to start sending a zero-star feedback. But first, intercept the packet via Burp.
+
+Looking at the packet and the request JSON body, we would see a key-value pair as:
+
+    ...
+    "rating":1
+    ...
+
+Just by changing the value to 0, we could send a zero-star rating and it works since the server doesn't do any input sanitation.
+
 # Admin Login
 Main vulnerability: SQL injection
 
@@ -33,8 +47,7 @@ Trying to send a packet at the "registration" page and then getting a response i
 But I could add this key-value pair to the end of the request JSON in the "registration" packet 
 
     ...
-        "role": "admin"
-    }
+    "role": "admin"
     ...
 
 Therefore, this would make my account have admin privileges.
