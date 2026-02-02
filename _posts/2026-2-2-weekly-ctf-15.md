@@ -10,6 +10,8 @@ Here, it is a substitution cipher. Best way to discern something is looking at t
 
 I used this tool for making it easier `https://www.boxentriq.com/ciphers/substitution-cipher` to see which mapping makes the most sense to get some English words out of this. But this would work just as fine by using `sed` and `tr`.
 
+We know that the flag starts with `picoCTF` so that is a starting ground. Then we can guess for more appropriate letters (Letter 'f' appears the most which might mean it is 'e', a common letter in the alphabet for example).
+
 In fact, rather than keeping on using `sed`, we could use a single `tr` command with the mappings in order as such to shorten it:
 
     cat message.txt | tr [abcdefghijklmn] [bcdefghijklmno] > message2.txt
