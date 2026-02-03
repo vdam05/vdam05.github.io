@@ -1,4 +1,4 @@
-# Weekly CTF
+# Weekly CTF 15
 This is the new semester and I am once again posting my CTFs whenever we meet.
 
 We also went over setting up a VM.
