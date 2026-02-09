@@ -72,7 +72,4 @@ print(f"Semi_decr is: {semi_decr}")
 print(f"Final msg is: {full_decr}")
 print(f"Length of cipher is: {len(ciphertext)}")
 ```
-
 </details>
-
-Note: 
