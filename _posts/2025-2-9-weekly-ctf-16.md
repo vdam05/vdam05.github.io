@@ -30,7 +30,8 @@ To solve this, I created a Python file called `solve.py` and figure out the rest
 Then I created two functions from the two encryption functions, to decrypt instead. The way to do this is to reverse it.
 
 <details>
-<summary>My code</summary>    
+<summary>My code
+</summary>
 
 ```python
 def decrypt(cipher, key):  
