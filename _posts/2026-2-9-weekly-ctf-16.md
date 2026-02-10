@@ -64,7 +64,6 @@ My code:
     semi_decr = decrypt(ciphertext, shared_key)
     full_decr = dynamic_xor_decrypt(semi_decr, text_key)
     print(f"Shared key is: {shared_key}")
-    print(f"Text_key in ords are: {cipher_keys}")
     print(f"Semi_decr is: {semi_decr}")
     print(f"Final msg is: {full_decr}")
     print(f"Length of cipher is: {len(ciphertext)}")
