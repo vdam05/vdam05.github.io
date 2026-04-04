@@ -1,7 +1,7 @@
 # Weekly CTF 18
 Today, we were supposed to be doing a variety of challenges in different categories on picoCTF, but there is some sort of server errors. So we are doing challenges without spinning up an instance.
 
-# New Viginere
+## New Viginere
 We are continuing this one from Weekly CTF 16.
 
 The first method is called `b16_encode` and taking a look at it, it takes each character in the plaintext, formats it as an 8-bit representation, then converts each half into an integer (the second argument of int() tells us the base that the first argument is in) annd turns it to be one of the character in `ALPHABET`.
