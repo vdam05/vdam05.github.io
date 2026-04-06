@@ -12,9 +12,9 @@ Therefore, we could add the PNG magic bytes in front so that it accepts it as a 
 
 Then, I found a good resource for reference: https://www.synacktiv.com/publications/persistent-php-payloads-in-pngs-how-to-inject-php-code-in-an-image-and-keep-it-there
 
-Also, I look at the `robots.txt` file. There is `/uploads` which we guessed and there is `/instructions.txt`. Going there, we basically get a confirmation of the server behavior: it checks extension and header bytes.
+This source doesn't actually help much. 
 
-Wait a minute, it says it looks for a `.png` extension. Does it say that the extension needs to be at the end? If not, we can use our PNG file with the magic bytes added and make it into a PHP file like `file.png.php`.
+Wait a minute, if the program looks for the extension `.png`, does the extension have to be at the end specifically? If not, we can use our PNG file with the magic bytes added and make it into a PHP file like `file.png.php`.
 
 After uploading, it works and now we can look for the flag file with a combination of `ls` and `cat`, appending multiple commands into one line with `;`.
 
