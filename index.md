@@ -6,4 +6,6 @@ Here is where I officially compile what I learn into a more presentable form. Th
 
 For any of these posts, I may be updating what I learn even more about that tool/topic. Dates are only the time when I started these posts, not when I finished them.
 
+Note: Weekly CTFs are currently only done on club days.
+
 For more information, contact links and Github link are at the bottom.
